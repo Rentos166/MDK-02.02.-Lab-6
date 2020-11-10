@@ -10,13 +10,14 @@ int main()
     int naim = 0, num = 0;
     cout << "Введите количество цифр, которые будут содержаться в массиве: " << endl;
     cin >> n;
+    naim == mass[0];
     if (n <= 30) //условие
     {
         mass = new double[n];
         cout << "Массив:\n" << endl;
         for (int i = 0; i < n; i++) //цикл для задания рандомных чисел в массиве
         {
-            mass[i] = rand() % 150 - 50;
+            mass[i] = rand() % 41 - 20;
         }
         for (int i = 0; i < n; i++) //цикл для вывода чисел массива
         {
@@ -24,8 +25,7 @@ int main()
         }
         for (int i = 0; i < n; i++) //цикл для нахождения наименьшего числа массива
         {
-            naim == mass[0];
-            if (mass[i] < naim)
+            if (mass[i] <= naim)
             {
                 naim = mass[i];
                 num = i;
